@@ -1,0 +1,76 @@
+<html>
+<title>FRUITS ORDERING</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+</head>
+
+<body>
+
+    <h1>FINAL CHECKOUT OF SHOPPING </h1>
+    <form>
+        <label for="server">FRUITS:</label>
+        <select id="server" name="server" required>
+            <option value="Fluent-PC:8121">Mango</option>
+            <option value="Fluent-PC:8077">Banana</option>
+            <option value="Imagine-PC:24">Watermelon</option>
+            <option value="Main-PC">Guava</option><br>
+        </select>
+
+        <div class="text">Trusting You and willing to shop</div>
+        <label for="visualise">
+            <input type="checkbox" name="checkbox" value="yes" required>
+            <br></label>
+
+        <label for="format">Payment type:</label>
+        <select id="submit" name="submit" required>
+            <option value="HTML">CARD</option>
+            <option value="CSV">CASH</option>
+            <option value="Docx">UPI</option>
+            <option value="Txt">NET-BANKING</option><br>
+        </select>
+
+        <label for="period">Delivery time: </label>
+        <div class="radio-label">
+            <input type="radio" name="period" value="today">
+            <div class="radio-text">Tomorrow</div><br>
+            <input type="radio" name="period" value="yesterday">
+            <div class="radio-text">In two days</div><br>
+            <input type="radio" name="period" value="lastweek">
+            <div class="radio-text">In 3 days</div><br>
+            <input type="radio" name="period" value="lastmonth">
+            <div class="radio-text">In 4 days</div><br>
+            <input type="radio" name="period" value="last3month">
+            <div class="radio-text">In 5 days</div><br>
+            <input type="radio" name="period" value="last6month">
+            <div class="radio-text">In 6 days</div><br>
+            <input type="radio" name="period" value="last12month">
+            <div class="radio-text">In 7 days</div><br>
+            <!-- <input type="radio" name="period" value="daterange"> -->
+            <!-- <div class="radio-text">Date Range</div><br> -->
+        </div>
+        <label for="start-date">Date of previous order if shopped to avail offers</label>
+        <input type="date" id="start-date" name="start-date" required>
+        <label for="top-number">Lucky Number of the reciever: </label>
+        <select id="top-number" name="top-number" required>
+            <option value="10">10</option>
+            <option value="10">9</option>
+            <option value="10">8</option>
+            <option value="10">7</option>
+            <option value="10">6</option>
+            <option value="10">5</option>
+            <option value="10">4</option>
+            <option value="10">3</option>
+            <option value="10">2</option>
+            <option value="10">1</option>
+        </select>
+        <label for="location">Any small descrpition for our service</label>
+        <textarea id="location" name="location" required></textarea>
+        <button type="submit">View Bill</button>
+    </form>
+    <a href="info system.html"><button type="submit">Student info system</button></a><br>
+    <a href="smashing survey.html"><button type="submit">Survey system</button></a><br>
+
+</body>
+
+</html>
