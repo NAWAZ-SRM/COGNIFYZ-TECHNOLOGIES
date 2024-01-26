@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Time Alert</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="btn"><button onclick="showCurrentTime()">Click me for current time</button></div>
+
+<script>
+  function showCurrentTime() {
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+
+    
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+
+    var timeString = hours + ":" + minutes + ":" + seconds;
+
+    alert("Current time is: " + timeString);
+  }
+</script>
+
+</body>
+</html>
